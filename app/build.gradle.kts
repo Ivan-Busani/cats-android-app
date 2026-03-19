@@ -6,16 +6,12 @@ plugins {
 
 android {
     namespace = "com.mivanba.catsapp"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.mivanba.catsapp"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -64,5 +60,7 @@ dependencies {
     implementation(libs.navigation.compose)
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
+    implementation(libs.constraintlayout.compose)
+
     ksp(libs.room.compiler)
 }
