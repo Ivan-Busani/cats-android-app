@@ -1,6 +1,7 @@
 package com.mivanba.catsapp.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -10,7 +11,7 @@ import com.mivanba.catsapp.ui.CatDetailScreen
 import com.mivanba.catsapp.ui.CatScreen
 
 @Composable
-fun AppNavigation() {
+fun AppNavigation(modifier: Modifier) {
     val navController = rememberNavController()
 
     NavHost(

@@ -56,11 +56,12 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.compose)
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
-    implementation(libs.coil.compose)
     implementation(libs.navigation.compose)
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     implementation(libs.constraintlayout.compose)
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 
     ksp(libs.room.compiler)
 }
