@@ -62,6 +62,7 @@ dependencies {
     implementation(libs.constraintlayout.compose)
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
+    implementation(libs.lottie.compose)
 
     ksp(libs.room.compiler)
 }
